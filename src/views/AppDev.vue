@@ -38,7 +38,7 @@ export default {
 						'indent-rainbow',
 						'Material Icon Theme',
 						'Bracket Pair Colorizer',
-						'Gruvbox Theme',
+						'Cobalt2 Theme Official',
 						'Vetur',
 						'Open Remote SSH',
 						'PHP Intelephense'
