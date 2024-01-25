@@ -33,13 +33,15 @@ export default {
 					title: 'VSCode пакеты',
 					lines: [
 						'Docker',
-						'Electron Color Theme',
 						'GitLens',
 						'Go',
 						'indent-rainbow',
 						'Material Icon Theme',
-						'Rainbow Bracket',
+						'Bracket Pair Colorizer',
+						'Gruvbox Theme',
 						'Vetur',
+						'Open Remote SSH',
+						'PHP Intelephense'
 					]
 				},
 				{
