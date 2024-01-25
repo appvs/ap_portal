@@ -30,7 +30,7 @@ export default {
 				},
 				
 				{
-					title: 'VSCode пакеты',
+					title: 'VSCodium пакеты',
 					lines: [
 						'Docker',
 						'GitLens',

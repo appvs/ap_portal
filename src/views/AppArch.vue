@@ -49,7 +49,7 @@ export default {
 				},
 				{
 					title: 'Установка пакетов',
-					lines: ['yay -S steam gamemode calibre visual-studio-code-bin discord filezilla telegram-desktop go docker docker-compose etcher vlc diodon']
+					lines: ['yay -S steam gamemode calibre vscodium-bin discord filezilla telegram-desktop go docker docker-compose etcher vlc diodon']
 				},
 				{
 					title: 'Настройки клавиатуры ARDOR',

@@ -24,7 +24,7 @@ export default {
 					lines: [
 						'sudo apt-get update',
 						'sudo apt-get upgrade',
-						'sudo apt install telegram-desktop docker docker-compose steam filezilla discord golang',
+						'sudo apt install telegram-desktop docker docker-compose steam filezilla discord golang vscodium-bin',
 						'sudo apt install flatpak',
 						'flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo'
 					]
@@ -71,7 +71,6 @@ export default {
 					lines: [
 						'https://github.com/balena-io/etcher/releases/',
 						'https://dbeaver.io/download/',
-						'https://code.visualstudio.com/docs/setup/linux'
 					]
 				},
 				{
