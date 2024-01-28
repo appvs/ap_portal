@@ -57,6 +57,12 @@ export default {
 						'sudo nano /etc/modprobe.d/hid_apple.conf',
 						'options hid_apple fnmode=2'
 					]
+				},
+				{
+					title: 'Настройка иконок',
+					lines: [
+						'sudo cp -r IconFolder /usr/share/icons/',
+					]
 				}
 			]
 		}
