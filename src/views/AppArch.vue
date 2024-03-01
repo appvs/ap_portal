@@ -63,6 +63,14 @@ export default {
 					lines: [
 						'sudo cp -r IconFolder /usr/share/icons/',
 					]
+				},
+				{
+					title: 'Расширения',
+					lines: [
+						'blur my shell',
+						'dash2dock animated',
+						'vitals',
+					]
 				}
 			]
 		}
