@@ -18,6 +18,7 @@ import Dock from './components/AppDock.vue'
 
 export default {
 	components: { Dock },
+	
 	data() {
 		return {
 			sections: [
@@ -48,7 +49,7 @@ export default {
 				},
 			],
 		}
-	}
+	},
 }
 </script>
 
