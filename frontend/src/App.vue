@@ -18,6 +18,7 @@ import Dock from './components/AppDock.vue'
 
 export default {
 	components: { Dock },
+
 	data() {
 		return {
 			sections: [
@@ -48,6 +49,22 @@ export default {
 				},
 			],
 		}
+	},
+
+	mounted() {
+		this.testGet()
+	},
+
+	methods: {
+		async testGet() {
+			fetch('http://localhost:8000')
+				.then(response => {
+					return response.text()
+				})
+				.then(data => {
+					console.log(data)
+				})
+		}
 	}
 }
 </script>
@@ -57,11 +74,11 @@ export default {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #FAF4D3;
+	color: #DEE4EA;
 }
 
 body {
-	background:#004643;
+	background:#1D2125;
 }
 
 h1 {
@@ -69,12 +86,11 @@ h1 {
 	width: 65%;
 	margin: 20px auto;
 	font-size: 40px;
-	border-bottom: 2px solid #FAF4D3;
+	border-bottom: 2px solid #DEE4EA;
 }
 
 h2 {
-	width: 90%;
-	text-align: left;
+	text-align: center;
 	margin: 0 auto 12px;
 	font-size: 30px;
 	border-color: transparent;
@@ -87,7 +103,7 @@ a {
 .content {
 	position: relative;
 	top: -2px;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	min-height: 200px;
 	height: 620px;
@@ -95,7 +111,8 @@ a {
 	box-sizing: border-box;
 	padding: 10px;
 	overflow-y: scroll;
-	box-shadow: 0 0 15px #0C1618;
-	border-radius: 12px;
+	// box-shadow: 0 0 15px #282E33;
+	border-top: 1px solid #282E33;
+	border-bottom: 1px solid #282E33;
 }
 </style>
