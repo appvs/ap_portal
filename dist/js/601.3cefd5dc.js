@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkap_portal"]=self["webpackChunkap_portal"]||[]).push([[601],{8601:function(n,r,t){function e(n,r){return" VITA "}t.r(r),t.d(r,{default:function(){return p}});var u=t(89);const a={},c=(0,u.Z)(a,[["render",e]]);var p=c}}]);
-//# sourceMappingURL=601.3cefd5dc.js.map

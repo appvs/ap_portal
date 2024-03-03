@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkap_portal"]=self["webpackChunkap_portal"]||[]).push([[201],{5201:function(n,r,t){t.r(r),t.d(r,{default:function(){return p}});var u=t(3396);function a(n,r){return(0,u.wg)(),(0,u.iD)("h2",null,"Домашняя страница")}var e=t(89);const c={},l=(0,e.Z)(c,[["render",a]]);var p=l}}]);
-//# sourceMappingURL=201.15b3cab4.js.map
