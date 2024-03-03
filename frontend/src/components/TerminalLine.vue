@@ -26,7 +26,7 @@ export default {
 .copy-line {
 	margin: 5px auto 5px auto;
 	padding: 7px 10px;
-	background: #0C1618;
+	background: #2C333A;
 	border-radius: 12px;
 
 	span {
