@@ -1,24 +1,35 @@
 <template>
-	<h2>Настройка инструкментов разработки</h2>
+	<div>
+		<h2>Настройка инструкментов разработки</h2>
 
-	<div class="content">
-		<terminal-line
-			v-for="block in blocks"
-			:key="block.title"
-			:title="block.title"
-			:lines="block.lines"
-		></terminal-line>
+		<div class="content">
+			<terminal-line
+				v-for="block in blocksLine"
+				:key="block.title"
+				:title="block.title"
+				:lines="block.lines"
+			></terminal-line>
+
+			<terminal-area
+				v-for="block in blocksArea"
+				:key="block.title"
+				:title="block.title"
+				:lines="block.lines"
+			></terminal-area>
+		</div>
 	</div>
 </template>
 
 <script>
 import TerminalLine from '@/components/TerminalLine.vue'
+import TerminalArea from '../components/TerminalArea.vue'
 
 export default {
-	components: {TerminalLine},
+	components: { TerminalLine, TerminalArea },
+
 	data() {
 		return {
-			blocks: [
+			blocksLine: [
 				{
 					title: 'Docker',
 					lines: [
@@ -44,6 +55,8 @@ export default {
 						'PHP Intelephense'
 					]
 				},
+			],
+			blocksArea: [
 				{
 					title: 'VSCode -> Settings(JSON)',
 					lines: [

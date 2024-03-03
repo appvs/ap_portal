@@ -1,11 +1,11 @@
 <template>
-	<h1>
-		<router-link to="/">АП_ПОРТАЛ</router-link>
-	</h1>
+	<div>
+		<h1><router-link to="/">АП_ПОРТАЛ</router-link></h1>
 
-	<router-view></router-view>
-	
-	<Dock :sections="sections"/>
+		<router-view></router-view>
+		
+		<dock :sections="sections"></dock>
+	</div>
 </template>
 
 <script>
@@ -14,10 +14,11 @@ import ubuntu from './assets/linux-ubuntu.svg'
 import linux from './assets/linux.svg'
 import vita from './assets/vita.svg'
 import anydo from './assets/anydo.svg'
-import Dock from './components/AppDock.vue'
+import dock from './components/AppDock.vue'
+import axios from 'axios'
 
 export default {
-	components: { Dock },
+	components: { dock },
 	
 	data() {
 		return {
@@ -57,13 +58,10 @@ export default {
 
 	methods: {
 		async testGet() {
-			fetch('http://localhost:8000')
-				.then(response => {
-					return response.text()
-				})
-				.then(data => {
-					console.log(data)
-				})
+			axios.get('http://localhost:8000')
+			.then( response => {
+				return response.data
+			})
 		}
 	}
 }
@@ -106,7 +104,7 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	min-height: 200px;
-	height: 620px;
+	height: 700px;
 	border-top-color: transparent;
 	box-sizing: border-box;
 	padding: 10px;

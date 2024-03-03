@@ -13,7 +13,9 @@ func main() {
 
 	e.GET("/", func(c echo.Context) error {
 		c.Response().Header().Set("Access-Control-Allow-Origin", "*")
-		return c.String(http.StatusOK, "Hello World!")
+		return c.JSON(http.StatusOK, I{
+			"msg": "Hello World!",
+		})
 	})
 
 	e.GET("/test", func(c echo.Context) error {
