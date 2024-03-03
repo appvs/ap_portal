@@ -50,7 +50,6 @@ export default {
 			],
 		}
 	},
-<<<<<<< HEAD
 
 	mounted() {
 		this.testGet()
@@ -67,8 +66,6 @@ export default {
 				})
 		}
 	}
-=======
->>>>>>> 862d4694d1f21cff68919a65976a4eb41dec705d
 }
 </script>
 
