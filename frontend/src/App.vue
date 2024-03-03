@@ -5,7 +5,7 @@
 
 	<router-view></router-view>
 	
-	<dock :sections="sections"></dock>
+	<Dock :sections="sections"/>
 </template>
 
 <script>
