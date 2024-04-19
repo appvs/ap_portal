@@ -1,19 +1,13 @@
 <template>
 	<div>
 		<h1><router-link to="/">АП_ПОРТАЛ</router-link></h1>
+		<dock :sections="sections"></dock>
 
 		<router-view></router-view>
-		
-		<dock :sections="sections"></dock>
 	</div>
 </template>
 
 <script>
-import arch from './assets/linux-arch.svg'
-import ubuntu from './assets/linux-ubuntu.svg'
-import linux from './assets/linux.svg'
-import vita from './assets/vita.svg'
-import anydo from './assets/anydo.svg'
 import dock from './components/AppDock.vue'
 import axios from 'axios'
 
@@ -24,27 +18,22 @@ export default {
 		return {
 			sections: [
 				{
-					icon: arch,
 					link: '/arch',
-					tooltip: "Arch Linux (и его производные)"
+					tooltip: "Manjaro"
+				},
+				// {
+				// 	link: '/ubuntu',
+				// 	tooltip: "Pop!_OS"
+				// },
+				{
+					link: '/dev',
+					tooltip: "Dev"
 				},
 				{
-					icon: ubuntu,
-					link: '/ubuntu',
-					tooltip: "Ubuntu (и его производные)"
-				},
-				{
-					icon: linux,
-					link: '/linux',
-					tooltip: "Общие настройки Linux"
-				},
-				{
-					icon: vita,
 					link: '/vita',
 					tooltip: "Vita"
 				},
 				{
-					icon: anydo,
 					link: '/todo',
 					tooltip: "ToDo"
 				},
@@ -53,7 +42,7 @@ export default {
 	},
 
 	mounted() {
-		this.testGet()
+		// this.testGet()
 	},
 
 	methods: {
@@ -72,26 +61,29 @@ export default {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #DEE4EA;
+	color: #1D2125;
 }
 
 body {
-	background:#1D2125;
+	background:#DEE4EA;
 }
 
 h1 {
 	text-align: center;
-	width: 65%;
-	margin: 20px auto;
-	font-size: 40px;
-	border-bottom: 2px solid #DEE4EA;
+	width: 75%;
+	margin: 20px auto 20px auto;
+	font-size: 70px;
 }
 
 h2 {
 	text-align: center;
-	margin: 0 auto 12px;
-	font-size: 30px;
+	margin: 20px auto 12px;
+	font-size: 46px;
 	border-color: transparent;
+}
+
+h3 {
+	font-size: 40px;
 }
 
 a {
@@ -100,17 +92,9 @@ a {
 
 .content {
 	position: relative;
-	top: -2px;
 	width: 100%;
-	margin: 0 auto;
-	min-height: 200px;
-	height: 700px;
 	border-top-color: transparent;
 	box-sizing: border-box;
 	padding: 10px;
-	overflow-y: scroll;
-	// box-shadow: 0 0 15px #282E33;
-	border-top: 1px solid #282E33;
-	border-bottom: 1px solid #282E33;
 }
 </style>

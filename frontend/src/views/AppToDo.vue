@@ -1,3 +1,3 @@
 <template>
-	TO DO
+<div></div>
 </template>

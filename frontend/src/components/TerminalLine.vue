@@ -25,9 +25,13 @@ export default {
 
 .copy-line {
 	margin: 5px auto 5px auto;
-	padding: 7px 10px;
-	background: #2C333A;
+	background: #DEE4EA;
 	border-radius: 12px;
+	font-size: 22px;
+
+	&:last-child {
+		margin-bottom: 50px;
+	}
 
 	span {
 		color: teal;

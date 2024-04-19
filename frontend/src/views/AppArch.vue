@@ -1,13 +1,15 @@
 <template>
-	<h2>Настройка Manjaro (Arch)</h2>
+	<div>
+		<h2>Настройка Manjaro (Arch)</h2>
 
-	<div class="content">
-		<terminal-line
-			v-for="block in blocks"
-			:key="block.title"
-			:title="block.title"
-			:lines="block.lines"
-		></terminal-line>
+		<div class="content">
+			<terminal-line
+				v-for="block in blocks"
+				:key="block.title"
+				:title="block.title"
+				:lines="block.lines"
+			></terminal-line>
+		</div>
 	</div>
 </template>
 

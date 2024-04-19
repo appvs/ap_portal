@@ -19,8 +19,8 @@ const router = createRouter({
 			component: () => import("./views/AppUbuntu.vue")
 		},
 		{
-			path: '/linux',
-			name: 'linux',
+			path: '/dev',
+			name: 'dev',
 			component: () => import("./views/AppDev.vue")
 		},
 		{

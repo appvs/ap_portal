@@ -1,3 +1,3 @@
 <template>
-	VITA
+<div></div>
 </template>
