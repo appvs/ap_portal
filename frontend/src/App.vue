@@ -21,10 +21,6 @@ export default {
 					link: '/arch',
 					tooltip: "Manjaro"
 				},
-				// {
-				// 	link: '/ubuntu',
-				// 	tooltip: "Pop!_OS"
-				// },
 				{
 					link: '/dev',
 					tooltip: "Dev"

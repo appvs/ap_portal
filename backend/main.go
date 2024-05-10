@@ -5,12 +5,14 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 type I map[string]interface{}
 
 func main() {
 	e := echo.New()
+	e.Use(middleware.CORS())
 
 	migration.DBInit()
 
