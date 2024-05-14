@@ -70,6 +70,24 @@ export default {
 					]
 				},
 				{
+					title: 'Настройки клавиатуры ARDOR - автозапуск скрипта',
+					lines: [
+						'sudo nano ardor.sh',
+						`#!/bin/bash
+						echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode`,
+						'sudo nano /etc/systemd/system/myscript.service',
+						`[Unit]
+							Description=Opendchub service
+							After=network.target
+							[Service]
+							ExecStart=/etc/init.d/odchub
+							[Install]
+							WantedBy=multi-user.target`,
+						'sudo systemctl start myscript',
+						'sudo systemctl enable myscript'
+					]
+				},
+				{
 					title: 'Настройка иконок',
 					lines: [
 						'sudo cp -r IconFolder /usr/share/icons/',
