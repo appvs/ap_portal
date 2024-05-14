@@ -47,6 +47,13 @@ export default {
 					]
 				},
 				{
+					title: 'ZSH',
+					lines: [
+						'yay -S zsh',
+						'sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"',
+					]
+				},
+				{
 					title: 'Alias',
 					lines: [
 						'sudo nano .zshrc',
@@ -59,7 +66,7 @@ export default {
 				},
 				{
 					title: 'Установка пакетов',
-					lines: ['yay -S steam gamemode calibre vscodium-bin discord filezilla telegram-desktop go docker docker-compose etcher vlc diodon']
+					lines: ['yay -S neofetch steam gamemode discord filezilla telegram-desktop go docker docker-compose etcher vlc diodon transmission-qt wine godot gimp inkscape blender mangohud goverlay']
 				},
 				{
 					title: 'Настройки клавиатуры ARDOR',
