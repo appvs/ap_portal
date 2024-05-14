@@ -38,7 +38,7 @@ export default {
 	},
 
 	mounted() {
-		this.testGet()
+		// this.testGet()
 	},
 
 	methods: {

@@ -9,15 +9,23 @@
 				:title="block.title"
 				:lines="block.lines"
 			></terminal-line>
+
+			<terminal-area
+				v-for="block in blocksArea"
+				:key="block.title"
+				:title="block.title"
+				:lines="block.lines"
+			></terminal-area>
 		</div>
 	</div>
 </template>
 
 <script>
 import TerminalLine from '@/components/TerminalLine.vue'
+import TerminalArea from '../components/TerminalArea.vue'
 
 export default {
-	components: {TerminalLine},
+	components: { TerminalLine, TerminalArea },
 	data() {
 		return {
 			blocks: [
@@ -57,7 +65,8 @@ export default {
 					title: 'Настройки клавиатуры ARDOR',
 					lines: [
 						'sudo nano /etc/modprobe.d/hid_apple.conf',
-						'options hid_apple fnmode=2'
+						'options hid_apple fnmode=2',
+						'echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode'
 					]
 				},
 				{
@@ -73,7 +82,27 @@ export default {
 						'dash2dock animated',
 						'vitals',
 					]
-				}
+				},
+				{
+					title: 'Если отвалился bluetooth',
+					lines: [
+						'sudo modprobe -r btusb',
+						'sudo systemctl restart bluetooth',
+						'sudo modprobe btusb',
+					]
+				},
+				
+			],
+
+			blockArea: [
+				{
+					title: 'Расширения',
+					lines: [
+						'blur my shell',
+						'dash2dock animated',
+						'vitals',
+					]
+				},
 			]
 		}
 	}
