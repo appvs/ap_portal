@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2>Настройка Manjaro (Arch)</h2>
+		<h2>Настройка Arch based</h2>
 
 		<div class="content">
 			<terminal-line
@@ -61,7 +61,8 @@ export default {
 						'alias sshdev="ssh popov@172.16.31.17"',
 						'alias sshprod="ssh popov@172.16.31.16"',
 						'alias ll="ls -la"',
-						'alias arm="cd projects/arm-content && code . && cd frontside && npm run serve"',
+						// 'alias arm="cd projects/arm-content && code . && cd frontside && npm run serve"',
+						'alias arm="cd /home/ap/work/arm-content && docker compose -f docker-compose-local.yml up -d"'
 					]
 				},
 				{
