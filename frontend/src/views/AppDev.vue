@@ -60,14 +60,23 @@ export default {
 				{
 					title: 'VSCode -> Settings(JSON)',
 					lines: [
-						'"editor.formatOnSave": true,',
-						'"editor.tabSize": 4,',
-						'"editor.insertSpaces": false,',
-						'"editor.detectIndentation": false,',
-						'"terminal.integrated.cursorStyle": "line",',
-						'"explorer.confirmDelete": false,',
-						'"workbench.editor.enablePreview": false,',
-						'"vetur.format.enable": false,',
+							'"workbench.startupEditor": "none"',
+							'"editor.formatOnSave": true',
+							'"editor.tabSize": 4',
+							'"editor.insertSpaces": false',
+							'"editor.detectIndentation": false',
+							'"terminal.integrated.cursorStyle": "line"',
+							'"explorer.confirmDelete": false',
+							'"workbench.editor.enablePreview": false',
+							'"vetur.format.enable": false',
+							'"workbench.iconTheme": "material-icon-theme"',
+							'"workbench.colorTheme": "Gruvbox Dark Hard"',
+							'"telemetry.telemetryLevel": "off"',
+							'"editor.stickyScroll.enabled": false',
+							'"editor.stickyScroll.scrollWithEditor": false',
+							'"editor.hover.sticky": false',
+							'"workbench.tree.enableStickyScroll": false',
+							'"extensions.ignoreRecommendations": true',
 					]
 				}
 			]
